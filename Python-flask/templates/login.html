@@ -1,0 +1,50 @@
+<!--登录模块 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DAC</title>
+    <meta charset="utf-8">
+    <link href="/static/css/semantic.min.css" rel="stylesheet" type="text/css">
+    <script src="/static/js/semantic.min.js" ></script>
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="ui top grid container">
+    <div class="row"></div>
+    <div class="row">
+        <div class="sixteen wide column">
+            <div class="ui very padded segment">
+                <div class="ui two column grid">
+                    <div class="column">
+                        <div class="ui header" onclick="location.href = '';">
+                            <h1>DAC</h1>
+                        </div>
+                    </div>
+                    <h3 class="ui header">
+                        Login
+                    </h3>
+                    <form class="ui form" method="get" action='/login'>
+                        <div class="field">
+                            <label>Username</label>
+                            <input type="text" name="user" maxlength="10">
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <input type="password" name="password" maxlength="10">
+                        </div>
+                        <button class="ui blue button" type="submit" name="login">
+                            Login
+                        </button>
+                        <button class="ui button" type="button" name="regist" onclick="location.href ='regist'">
+                            Register
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
